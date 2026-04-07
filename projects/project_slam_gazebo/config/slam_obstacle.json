@@ -1,0 +1,20 @@
+{
+    "world_name": "slam_obstacle_course",
+    "drones": [
+        {
+            "model_type": "quadrotor_base",
+            "model_name": "drone0",
+            "xyz": [0.0, 0.0, 0.3],
+            "rpy": [0.0, 0.0, 0.0],
+            "flight_time": 120,
+            "payload": [
+                {
+                    "model_name": "lidar_0",
+                    "model_type": "lidar_3d",
+                    "xyz": [0.0, 0.0, 0.1],
+                    "rpy": [0.0, 0.0, 0.0]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+
+<sdf version="1.6">
+    <world name="slam_obstacle_course">
+        <physics name="4ms" type="ignored">
+            <max_step_size>0.004</max_step_size>
+            <real_time_factor>1.0</real_time_factor>
+        </physics>
+        <plugin
+            filename="ignition-gazebo-physics-system"
+            name="ignition::gazebo::systems::Physics">
+        </plugin>
+        <plugin
+            filename="ignition-gazebo-scene-broadcaster-system"
+            name="ignition::gazebo::systems::SceneBroadcaster">
+        </plugin>
+        <plugin
+            filename="ignition-gazebo-user-commands-system"
+            name="ignition::gazebo::systems::UserCommands">
+        </plugin>
+        <plugin
+            filename="ignition-gazebo-sensors-system"
+            name="ignition::gazebo::systems::Sensors">
+            <render_engine>ogre2</render_engine>
+        </plugin>
+
+        <light type="directional" name="sun">
+            <cast_shadows>true</cast_shadows>
+            <pose>0 0 10 0 0 0</pose>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+            <attenuation>
+                <range>1000</range>
+                <constant>0.9</constant>
+                <linear>0.01</linear>
+                <quadratic>0.001</quadratic>
+            </attenuation>
+            <direction>-0.5 0.1 -0.9</direction>
+        </light>
+
+        {% if use_origin -%}
+        <spherical_coordinates>
+            <surface_model>EARTH_WGS84</surface_model>
+            <latitude_deg>{{ origin.latitude }}</latitude_deg>
+            <longitude_deg>{{ origin.longitude }}</longitude_deg>
+            <elevation>{{ origin.altitude }}</elevation>
+            <heading_deg>0.0</heading_deg>
+        </spherical_coordinates>
+        {% endif -%}
+
+        <!-- Ground plane -->
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+
+        <!-- ============================================== -->
+        <!-- OBSTACLES: walls, boxes, cylinders at varying  -->
+        <!-- heights and positions for 3D LiDAR mapping     -->
+        <!-- Area: ~30m x 30m, max height ~6m               -->
+        <!-- ============================================== -->
+
+        <!-- Perimeter walls (4 sides) -->
+        <model name="wall_north">
+            <static>true</static>
+            <pose>0 15 1.5 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><box><size>30 0.3 3</size></box></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><box><size>30 0.3 3</size></box></geometry>
+                    <material>
+                        <ambient>0.5 0.5 0.5 1</ambient>
+                        <diffuse>0.7 0.7 0.7 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <model name="wall_south">
+            <static>true</static>
+            <pose>0 -15 1.5 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><box><size>30 0.3 3</size></box></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><box><size>30 0.3 3</size></box></geometry>
+                    <material>
+                        <ambient>0.5 0.5 0.5 1</ambient>
+                        <diffuse>0.7 0.7 0.7 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <model name="wall_east">
+            <static>true</static>
+            <pose>15 0 1.5 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><box><size>0.3 30 3</size></box></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><box><size>0.3 30 3</size></box></geometry>
+                    <material>
+                        <ambient>0.5 0.5 0.5 1</ambient>
+                        <diffuse>0.7 0.7 0.7 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <model name="wall_west">
+            <static>true</static>
+            <pose>-15 0 1.5 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><box><size>0.3 30 3</size></box></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><box><size>0.3 30 3</size></box></geometry>
+                    <material>
+                        <ambient>0.5 0.5 0.5 1</ambient>
+                        <diffuse>0.7 0.7 0.7 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <!-- Tall box obstacles (different heights for 3D variation) -->
+        <model name="box_tall_1">
+            <static>true</static>
+            <pose>5 5 2.0 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><box><size>2 2 4</size></box></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><box><size>2 2 4</size></box></geometry>
+                    <material>
+                        <ambient>0.8 0.3 0.1 1</ambient>
+                        <diffuse>0.9 0.4 0.2 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <model name="box_tall_2">
+            <static>true</static>
+            <pose>-7 3 3.0 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><box><size>1.5 3 6</size></box></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><box><size>1.5 3 6</size></box></geometry>
+                    <material>
+                        <ambient>0.2 0.5 0.8 1</ambient>
+                        <diffuse>0.3 0.6 0.9 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <model name="box_low_1">
+            <static>true</static>
+            <pose>3 -8 0.5 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><box><size>3 1.5 1</size></box></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><box><size>3 1.5 1</size></box></geometry>
+                    <material>
+                        <ambient>0.1 0.7 0.3 1</ambient>
+                        <diffuse>0.2 0.8 0.4 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <model name="box_medium_1">
+            <static>true</static>
+            <pose>-4 -6 1.0 0 0 0.4</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><box><size>2 2 2</size></box></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><box><size>2 2 2</size></box></geometry>
+                    <material>
+                        <ambient>0.6 0.6 0.2 1</ambient>
+                        <diffuse>0.7 0.7 0.3 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <!-- Cylinder obstacles (pillars) -->
+        <model name="pillar_1">
+            <static>true</static>
+            <pose>8 -3 1.5 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><cylinder><radius>0.5</radius><length>3</length></cylinder></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><cylinder><radius>0.5</radius><length>3</length></cylinder></geometry>
+                    <material>
+                        <ambient>0.6 0.2 0.6 1</ambient>
+                        <diffuse>0.7 0.3 0.7 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <model name="pillar_2">
+            <static>true</static>
+            <pose>-10 -10 2.5 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><cylinder><radius>0.8</radius><length>5</length></cylinder></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><cylinder><radius>0.8</radius><length>5</length></cylinder></geometry>
+                    <material>
+                        <ambient>0.3 0.3 0.6 1</ambient>
+                        <diffuse>0.4 0.4 0.7 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <model name="pillar_3">
+            <static>true</static>
+            <pose>10 10 2.0 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><cylinder><radius>0.6</radius><length>4</length></cylinder></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><cylinder><radius>0.6</radius><length>4</length></cylinder></geometry>
+                    <material>
+                        <ambient>0.7 0.5 0.2 1</ambient>
+                        <diffuse>0.8 0.6 0.3 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <!-- L-shaped wall (creates partial occlusion) -->
+        <model name="l_wall_1">
+            <static>true</static>
+            <pose>-2 10 1.0 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><box><size>6 0.3 2</size></box></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><box><size>6 0.3 2</size></box></geometry>
+                    <material>
+                        <ambient>0.4 0.4 0.4 1</ambient>
+                        <diffuse>0.5 0.5 0.5 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <model name="l_wall_2">
+            <static>true</static>
+            <pose>-5 8 1.0 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><box><size>0.3 4 2</size></box></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><box><size>0.3 4 2</size></box></geometry>
+                    <material>
+                        <ambient>0.4 0.4 0.4 1</ambient>
+                        <diffuse>0.5 0.5 0.5 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <!-- Elevated platform (tests 3D mapping from below and above) -->
+        <model name="platform_1">
+            <static>true</static>
+            <pose>6 -10 2.5 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><box><size>4 4 0.2</size></box></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><box><size>4 4 0.2</size></box></geometry>
+                    <material>
+                        <ambient>0.3 0.6 0.6 1</ambient>
+                        <diffuse>0.4 0.7 0.7 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <!-- Platform support legs -->
+        <model name="platform_leg_1">
+            <static>true</static>
+            <pose>4.5 -8.5 1.2 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><cylinder><radius>0.15</radius><length>2.4</length></cylinder></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><cylinder><radius>0.15</radius><length>2.4</length></cylinder></geometry>
+                    <material>
+                        <ambient>0.4 0.4 0.4 1</ambient>
+                        <diffuse>0.5 0.5 0.5 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <model name="platform_leg_2">
+            <static>true</static>
+            <pose>7.5 -8.5 1.2 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><cylinder><radius>0.15</radius><length>2.4</length></cylinder></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><cylinder><radius>0.15</radius><length>2.4</length></cylinder></geometry>
+                    <material>
+                        <ambient>0.4 0.4 0.4 1</ambient>
+                        <diffuse>0.5 0.5 0.5 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <model name="platform_leg_3">
+            <static>true</static>
+            <pose>4.5 -11.5 1.2 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><cylinder><radius>0.15</radius><length>2.4</length></cylinder></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><cylinder><radius>0.15</radius><length>2.4</length></cylinder></geometry>
+                    <material>
+                        <ambient>0.4 0.4 0.4 1</ambient>
+                        <diffuse>0.5 0.5 0.5 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+        <model name="platform_leg_4">
+            <static>true</static>
+            <pose>7.5 -11.5 1.2 0 0 0</pose>
+            <link name="link">
+                <collision name="collision">
+                    <geometry><cylinder><radius>0.15</radius><length>2.4</length></cylinder></geometry>
+                </collision>
+                <visual name="visual">
+                    <geometry><cylinder><radius>0.15</radius><length>2.4</length></cylinder></geometry>
+                    <material>
+                        <ambient>0.4 0.4 0.4 1</ambient>
+                        <diffuse>0.5 0.5 0.5 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model>
+
+    </world>
+</sdf>

@@ -59,7 +59,8 @@ doc/html/
 ~
 .cache
 
-projects/
+projects/*
+!projects/project_slam_gazebo/
 log/
 logs/
 doxygen/
