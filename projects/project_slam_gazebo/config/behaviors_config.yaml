@@ -1,0 +1,19 @@
+/**:
+  ros__parameters:
+    use_sim_time: true
+    tf_timeout_threshold: 0.1
+
+    # TakeoffBehavior
+    takeoff_plugin_name: "takeoff_plugin_position"
+    takeoff_height: 2.0
+    takeoff_speed: 0.7
+    takeoff_threshold: 0.2
+
+    # LandBehavior
+    land_plugin_name: "land_plugin_speed"
+
+    # GoToBehavior
+    go_to_plugin_name: "go_to_plugin_position"
+
+    # FollowPathBehavior
+    follow_path_plugin_name: "follow_path_plugin_position"

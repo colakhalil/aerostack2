@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+"""Entry point for SLAM wrapper Python node."""
+from as2_slam_wrapper.slam_wrapper_node import main
+main()

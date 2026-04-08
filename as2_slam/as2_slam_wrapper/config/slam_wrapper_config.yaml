@@ -1,0 +1,10 @@
+/**:
+  ros__parameters:
+    point_cloud_topic: "sensor_measurements/lidar_0/points"
+    slam_backend: "kiss_icp"
+    min_range: 0.5
+    max_range: 100.0
+    voxel_size: 1.0
+    map_frame: "map"
+    odom_frame: "odom"
+    base_frame: "base_link"

@@ -1,0 +1,211 @@
+[INFO] [launch]: All log files can be found below /home/halil/.ros/log/2026-04-08-03-39-26-189169-halil-ibrahim-53064
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [slam_wrapper_py-1]: process started with pid [53066]
+[slam_wrapper_py-1] [INFO] [1775608768.460563734] [drone0.slam_wrapper]: SLAM backend: kiss_icp
+[slam_wrapper_py-1] [INFO] [1775608768.461371162] [drone0.slam_wrapper]: Subscribing to: sensor_measurements/lidar_0/points
+[slam_wrapper_py-1] [INFO] [1775608768.462008714] [drone0.slam_wrapper]: Range filter: [0.5, 100.0]m
+[slam_wrapper_py-1] [INFO] [1775608768.462567559] [drone0.slam_wrapper]: Voxel size: 1.0m
+[slam_wrapper_py-1] [INFO] [1775608768.488934863] [drone0.slam_wrapper]: SlamWrapperNode initialized — waiting for point cloud data...
+[slam_wrapper_py-1] [INFO] [1775608768.979106287] [drone0.slam_wrapper]: Frame #1: 24676 pts, pose=[0.00, 0.00, 0.00], map_size=1274
+[slam_wrapper_py-1] [INFO] [1775608769.891487307] [drone0.slam_wrapper]: Frame #11: 24676 pts, pose=[0.00, 0.00, 0.00], map_size=1413
+[slam_wrapper_py-1] [INFO] [1775608771.364987872] [drone0.slam_wrapper]: Frame #21: 24676 pts, pose=[0.00, 0.00, 0.00], map_size=1449
+[slam_wrapper_py-1] [INFO] [1775608772.784668011] [drone0.slam_wrapper]: Frame #31: 24676 pts, pose=[-0.00, 0.00, 0.00], map_size=1464
+[slam_wrapper_py-1] [INFO] [1775608773.784945968] [drone0.slam_wrapper]: Frame #41: 24676 pts, pose=[0.00, 0.00, 0.00], map_size=1478
+[slam_wrapper_py-1] [INFO] [1775608774.966893277] [drone0.slam_wrapper]: Frame #51: 24676 pts, pose=[-0.00, 0.00, 0.00], map_size=1499
+[slam_wrapper_py-1] [INFO] [1775608776.170884689] [drone0.slam_wrapper]: Frame #61: 24676 pts, pose=[0.00, 0.00, 0.00], map_size=1506
+[slam_wrapper_py-1] [INFO] [1775608777.619300119] [drone0.slam_wrapper]: Frame #71: 24676 pts, pose=[-0.00, 0.00, 0.00], map_size=1513
+[slam_wrapper_py-1] [INFO] [1775608778.846974595] [drone0.slam_wrapper]: Frame #81: 24676 pts, pose=[-0.00, 0.00, 0.00], map_size=1522
+[slam_wrapper_py-1] [INFO] [1775608780.185440548] [drone0.slam_wrapper]: Frame #91: 24676 pts, pose=[0.00, 0.00, 0.00], map_size=1527
+[slam_wrapper_py-1] [INFO] [1775608781.588353165] [drone0.slam_wrapper]: Frame #101: 24676 pts, pose=[-0.00, 0.00, 0.00], map_size=1533
+[slam_wrapper_py-1] [INFO] [1775608782.810265124] [drone0.slam_wrapper]: Frame #111: 24676 pts, pose=[-0.00, 0.00, 0.00], map_size=1538
+[slam_wrapper_py-1] [INFO] [1775608783.974500704] [drone0.slam_wrapper]: Frame #121: 24676 pts, pose=[0.00, 0.00, 0.00], map_size=1542
+[slam_wrapper_py-1] [INFO] [1775608784.980660832] [drone0.slam_wrapper]: Frame #131: 24676 pts, pose=[0.00, 0.00, 0.00], map_size=1544
+[slam_wrapper_py-1] [INFO] [1775608785.993774882] [drone0.slam_wrapper]: Frame #141: 24676 pts, pose=[0.00, 0.00, -0.00], map_size=1547
+[slam_wrapper_py-1] [INFO] [1775608787.010816883] [drone0.slam_wrapper]: Frame #151: 24792 pts, pose=[-0.03, -0.01, 0.00], map_size=2027
+[slam_wrapper_py-1] [INFO] [1775608788.064346639] [drone0.slam_wrapper]: Frame #161: 23470 pts, pose=[-0.00, 0.00, 0.13], map_size=4443
+[slam_wrapper_py-1] [INFO] [1775608789.091296429] [drone0.slam_wrapper]: Frame #171: 21518 pts, pose=[-0.00, 0.00, 0.66], map_size=7772
+[slam_wrapper_py-1] [INFO] [1775608790.156702526] [drone0.slam_wrapper]: Frame #181: 21294 pts, pose=[-0.00, -0.00, 0.67], map_size=8718
+[slam_wrapper_py-1] [INFO] [1775608791.477280251] [drone0.slam_wrapper]: Frame #191: 21765 pts, pose=[0.01, 0.01, 0.63], map_size=9177
+[slam_wrapper_py-1] [INFO] [1775608792.617536688] [drone0.slam_wrapper]: Frame #201: 22228 pts, pose=[0.01, -0.04, 0.61], map_size=10063
+[slam_wrapper_py-1] [INFO] [1775608793.698741349] [drone0.slam_wrapper]: Frame #211: 21847 pts, pose=[0.01, -0.78, 0.57], map_size=11870
+[slam_wrapper_py-1] [INFO] [1775608794.764493120] [drone0.slam_wrapper]: Frame #221: 21884 pts, pose=[0.01, -1.10, 0.58], map_size=12836
+[slam_wrapper_py-1] [INFO] [1775608795.921916588] [drone0.slam_wrapper]: Frame #231: 22197 pts, pose=[0.00, -1.00, 0.56], map_size=13391
+[slam_wrapper_py-1] [INFO] [1775608797.090144582] [drone0.slam_wrapper]: Frame #241: 22311 pts, pose=[0.17, -0.99, 0.55], map_size=13996
+[slam_wrapper_py-1] [INFO] [1775608798.256387565] [drone0.slam_wrapper]: Frame #251: 22169 pts, pose=[0.99, -0.98, 0.51], map_size=14716
+[slam_wrapper_py-1] [INFO] [1775608799.565739393] [drone0.slam_wrapper]: Frame #261: 22114 pts, pose=[1.04, -0.98, 0.52], map_size=15128
+[slam_wrapper_py-1] [INFO] [1775608800.856548764] [drone0.slam_wrapper]: Frame #271: 22073 pts, pose=[0.79, -0.99, 0.50], map_size=15425
+[slam_wrapper_py-1] [INFO] [1775608801.978503618] [drone0.slam_wrapper]: Frame #281: 22266 pts, pose=[-0.06, -1.01, 0.45], map_size=15704
+[slam_wrapper_py-1] [INFO] [1775608803.369444094] [drone0.slam_wrapper]: Frame #291: 22651 pts, pose=[-1.00, -1.00, 0.38], map_size=16050
+[slam_wrapper_py-1] [INFO] [1775608804.651890422] [drone0.slam_wrapper]: Frame #301: 22928 pts, pose=[-2.04, -1.01, 0.33], map_size=16464
+[slam_wrapper_py-1] [INFO] [1775608805.896769018] [drone0.slam_wrapper]: Frame #311: 23507 pts, pose=[-3.43, -1.03, 0.28], map_size=17164
+[slam_wrapper_py-1] [INFO] [1775608807.243815390] [drone0.slam_wrapper]: Frame #321: 23680 pts, pose=[-3.95, -1.02, 0.24], map_size=17737
+[slam_wrapper_py-1] [INFO] [1775608808.567391319] [drone0.slam_wrapper]: Frame #331: 23572 pts, pose=[-3.71, -1.02, 0.27], map_size=18003
+[slam_wrapper_py-1] [INFO] [1775608809.685035195] [drone0.slam_wrapper]: Frame #341: 23507 pts, pose=[-3.71, -1.01, 0.25], map_size=18199
+[slam_wrapper_py-1] [INFO] [1775608811.251245299] [drone0.slam_wrapper]: Frame #351: 23567 pts, pose=[-3.72, -1.01, 0.27], map_size=18296
+[slam_wrapper_py-1] [INFO] [1775608812.245237141] [drone0.slam_wrapper]: Frame #361: 23568 pts, pose=[-3.73, -1.00, 0.28], map_size=18343
+[slam_wrapper_py-1] [INFO] [1775608813.322775235] [drone0.slam_wrapper]: Frame #371: 23301 pts, pose=[-3.72, -1.01, 0.25], map_size=18437
+[slam_wrapper_py-1] [INFO] [1775608814.461609188] [drone0.slam_wrapper]: Frame #381: 23685 pts, pose=[-4.34, -1.04, 0.21], map_size=18664
+[slam_wrapper_py-1] [INFO] [1775608815.991394146] [drone0.slam_wrapper]: Frame #391: 24154 pts, pose=[-5.63, -1.02, 0.17], map_size=19117
+[slam_wrapper_py-1] [INFO] [1775608817.251507598] [drone0.slam_wrapper]: Frame #401: 24347 pts, pose=[-6.41, -1.01, 0.16], map_size=19503
+[slam_wrapper_py-1] [INFO] [1775608818.527789343] [drone0.slam_wrapper]: Frame #411: 24876 pts, pose=[-7.05, -1.03, 0.08], map_size=19721
+[slam_wrapper_py-1] [INFO] [1775608819.649563171] [drone0.slam_wrapper]: Frame #421: 25168 pts, pose=[-7.93, -1.03, 0.04], map_size=20087
+[slam_wrapper_py-1] [INFO] [1775608820.917330645] [drone0.slam_wrapper]: Frame #431: 24555 pts, pose=[-8.12, -0.69, 0.00], map_size=20496
+[slam_wrapper_py-1] [INFO] [1775608822.110838694] [drone0.slam_wrapper]: Frame #441: 25331 pts, pose=[-8.08, 0.49, -0.05], map_size=20705
+[slam_wrapper_py-1] [INFO] [1775608823.657995131] [drone0.slam_wrapper]: Frame #451: 27324 pts, pose=[-8.11, 2.00, -0.13], map_size=20841
+[slam_wrapper_py-1] [INFO] [1775608824.827975499] [drone0.slam_wrapper]: Frame #461: 27444 pts, pose=[-8.23, 2.15, -0.15], map_size=20938
+[slam_wrapper_py-1] [INFO] [1775608825.924431741] [drone0.slam_wrapper]: Frame #471: 26660 pts, pose=[-8.90, 2.11, -0.19], map_size=21111
+[slam_wrapper_py-1] [INFO] [1775608826.940827967] [drone0.slam_wrapper]: Frame #481: 26668 pts, pose=[-9.23, 2.15, -0.17], map_size=21226
+[slam_wrapper_py-1] [INFO] [1775608828.507793634] [drone0.slam_wrapper]: Frame #491: 26535 pts, pose=[-9.13, 2.14, -0.19], map_size=21303
+[slam_wrapper_py-1] [INFO] [1775608830.144716864] [drone0.slam_wrapper]: Frame #501: 26624 pts, pose=[-9.13, 2.14, -0.19], map_size=21334
+[slam_wrapper_py-1] [INFO] [1775608831.526302252] [drone0.slam_wrapper]: Frame #511: 26660 pts, pose=[-9.12, 2.14, -0.19], map_size=21344
+[slam_wrapper_py-1] [INFO] [1775608832.681098006] [drone0.slam_wrapper]: Frame #521: 26553 pts, pose=[-9.13, 2.16, -0.19], map_size=21355
+[slam_wrapper_py-1] [INFO] [1775608834.201504967] [drone0.slam_wrapper]: Frame #531: 26526 pts, pose=[-9.12, 2.15, -0.19], map_size=21362
+[slam_wrapper_py-1] [INFO] [1775608835.363896760] [drone0.slam_wrapper]: Frame #541: 26557 pts, pose=[-9.14, 2.15, -0.19], map_size=21368
+[slam_wrapper_py-1] [INFO] [1775608836.455129960] [drone0.slam_wrapper]: Frame #551: 26494 pts, pose=[-9.14, 2.16, -0.17], map_size=21378
+[slam_wrapper_py-1] [INFO] [1775608837.614667187] [drone0.slam_wrapper]: Frame #561: 22608 pts, pose=[-9.14, 2.18, 1.33], map_size=21480
+[slam_wrapper_py-1] [INFO] [1775608838.705568556] [drone0.slam_wrapper]: Frame #571: 17998 pts, pose=[-9.14, 2.18, 2.58], map_size=21635
+[slam_wrapper_py-1] [INFO] [1775608839.777754904] [drone0.slam_wrapper]: Frame #581: 18006 pts, pose=[-9.15, 2.16, 2.52], map_size=21694
+[slam_wrapper_py-1] [INFO] [1775608840.966692075] [drone0.slam_wrapper]: Frame #591: 18568 pts, pose=[-9.15, 2.18, 2.33], map_size=21762
+[slam_wrapper_py-1] [INFO] [1775608842.376682081] [drone0.slam_wrapper]: Frame #601: 18502 pts, pose=[-9.14, 2.17, 2.32], map_size=21792
+[slam_wrapper_py-1] [INFO] [1775608843.641083518] [drone0.slam_wrapper]: Frame #611: 18543 pts, pose=[-9.14, 2.18, 2.32], map_size=21813
+[slam_wrapper_py-1] [INFO] [1775608845.034362765] [drone0.slam_wrapper]: Frame #621: 18552 pts, pose=[-9.13, 2.19, 2.34], map_size=21832
+[slam_wrapper_py-1] [INFO] [1775608846.520439278] [drone0.slam_wrapper]: Frame #631: 18417 pts, pose=[-9.15, 2.19, 2.32], map_size=21849
+[slam_wrapper_py-1] [INFO] [1775608847.746761162] [drone0.slam_wrapper]: Frame #641: 18470 pts, pose=[-9.15, 2.16, 2.32], map_size=21858
+[slam_wrapper_py-1] [INFO] [1775608848.766216357] [drone0.slam_wrapper]: Frame #651: 18546 pts, pose=[-9.14, 2.16, 2.32], map_size=21877
+[slam_wrapper_py-1] [INFO] [1775608850.251784581] [drone0.slam_wrapper]: Frame #661: 18490 pts, pose=[-9.15, 2.17, 2.31], map_size=21885
+[slam_wrapper_py-1] [INFO] [1775608851.627534041] [drone0.slam_wrapper]: Frame #671: 18517 pts, pose=[-9.14, 2.19, 2.33], map_size=21888
+[slam_wrapper_py-1] [INFO] [1775608852.870164717] [drone0.slam_wrapper]: Frame #681: 16187 pts, pose=[-9.15, 2.16, 2.99], map_size=21922
+[slam_wrapper_py-1] [INFO] [1775608854.193794198] [drone0.slam_wrapper]: Frame #691: 9469 pts, pose=[-6.72, 1.77, 5.59], map_size=30050
+[slam_wrapper_py-1] [INFO] [1775608855.521342020] [drone0.slam_wrapper]: Frame #701: 7336 pts, pose=[-4.61, 1.68, 6.84], map_size=45911
+[slam_wrapper_py-1] [INFO] [1775608856.935253760] [drone0.slam_wrapper]: Frame #711: 7031 pts, pose=[-5.61, 2.42, 7.13], map_size=55356
+[slam_wrapper_py-1] [INFO] [1775608858.490099606] [drone0.slam_wrapper]: Frame #721: 5558 pts, pose=[-11.30, 2.75, 8.87], map_size=67517
+[slam_wrapper_py-1] [INFO] [1775608859.933614793] [drone0.slam_wrapper]: Frame #731: 5422 pts, pose=[-10.93, 2.09, 8.97], map_size=75020
+[slam_wrapper_py-1] [INFO] [1775608862.030614400] [drone0.slam_wrapper]: Frame #741: 5587 pts, pose=[-10.35, 1.36, 8.79], map_size=81065
+[slam_wrapper_py-1] [INFO] [1775608863.544142292] [drone0.slam_wrapper]: Frame #751: 5590 pts, pose=[-11.75, 2.38, 8.83], map_size=85379
+[slam_wrapper_py-1] [INFO] [1775608865.190286963] [drone0.slam_wrapper]: Frame #761: 5547 pts, pose=[-10.67, 2.89, 8.82], map_size=89239
+[slam_wrapper_py-1] [INFO] [1775608866.930037155] [drone0.slam_wrapper]: Frame #771: 5563 pts, pose=[-12.32, 2.74, 8.83], map_size=92201
+[slam_wrapper_py-1] [INFO] [1775608868.813569790] [drone0.slam_wrapper]: Frame #781: 5529 pts, pose=[-10.75, 2.64, 8.83], map_size=94597
+[slam_wrapper_py-1] [INFO] [1775608870.674850094] [drone0.slam_wrapper]: Frame #791: 5701 pts, pose=[-10.62, 2.68, 8.84], map_size=96577
+[slam_wrapper_py-1] [INFO] [1775608872.365909167] [drone0.slam_wrapper]: Frame #801: 5665 pts, pose=[-12.19, 2.60, 8.84], map_size=98577
+[slam_wrapper_py-1] [INFO] [1775608873.932092319] [drone0.slam_wrapper]: Frame #811: 5699 pts, pose=[-11.32, 2.75, 8.84], map_size=99694
+[slam_wrapper_py-1] [INFO] [1775608875.432223311] [drone0.slam_wrapper]: Frame #821: 5566 pts, pose=[-11.32, 2.62, 8.83], map_size=100723
+[slam_wrapper_py-1] [INFO] [1775608876.927250197] [drone0.slam_wrapper]: Frame #831: 5644 pts, pose=[-12.17, 3.41, 8.84], map_size=102111
+[slam_wrapper_py-1] [INFO] [1775608878.499591461] [drone0.slam_wrapper]: Frame #841: 5699 pts, pose=[-9.74, 3.28, 8.84], map_size=103271
+[slam_wrapper_py-1] [INFO] [1775608880.435672365] [drone0.slam_wrapper]: Frame #851: 5591 pts, pose=[-11.75, 2.31, 8.84], map_size=104482
+[slam_wrapper_py-1] [INFO] [1775608882.231324335] [drone0.slam_wrapper]: Frame #861: 5673 pts, pose=[-11.35, 3.51, 8.84], map_size=105536
+[slam_wrapper_py-1] [INFO] [1775608884.091067822] [drone0.slam_wrapper]: Frame #871: 5587 pts, pose=[-11.34, 2.44, 8.83], map_size=106412
+[slam_wrapper_py-1] [INFO] [1775608885.925737675] [drone0.slam_wrapper]: Frame #881: 5579 pts, pose=[-11.80, 2.29, 8.84], map_size=107049
+[slam_wrapper_py-1] [INFO] [1775608887.785854432] [drone0.slam_wrapper]: Frame #891: 5586 pts, pose=[-9.83, 2.30, 8.82], map_size=107758
+[slam_wrapper_py-1] [INFO] [1775608889.543002809] [drone0.slam_wrapper]: Frame #901: 5615 pts, pose=[-10.78, 3.11, 8.84], map_size=108428
+[slam_wrapper_py-1] [INFO] [1775608891.345997512] [drone0.slam_wrapper]: Frame #911: 5632 pts, pose=[-11.49, 1.65, 8.82], map_size=109160
+[slam_wrapper_py-1] [INFO] [1775608893.514268773] [drone0.slam_wrapper]: Frame #921: 5594 pts, pose=[-10.61, 3.69, 8.83], map_size=110007
+[slam_wrapper_py-1] [INFO] [1775608895.754265061] [drone0.slam_wrapper]: Frame #931: 5582 pts, pose=[-8.93, 3.24, 8.82], map_size=111659
+[slam_wrapper_py-1] [INFO] [1775608898.066784392] [drone0.slam_wrapper]: Frame #941: 5629 pts, pose=[-12.27, 2.74, 8.85], map_size=112247
+[slam_wrapper_py-1] [INFO] [1775608899.912291966] [drone0.slam_wrapper]: Frame #951: 5616 pts, pose=[-11.17, 2.93, 8.84], map_size=112690
+[slam_wrapper_py-1] [INFO] [1775608901.660869895] [drone0.slam_wrapper]: Frame #961: 5581 pts, pose=[-11.46, 2.98, 8.83], map_size=113316
+[slam_wrapper_py-1] [INFO] [1775608903.441719243] [drone0.slam_wrapper]: Frame #971: 5641 pts, pose=[-11.01, 3.39, 8.84], map_size=113849
+[slam_wrapper_py-1] [INFO] [1775608905.245919128] [drone0.slam_wrapper]: Frame #981: 5641 pts, pose=[-11.14, 3.33, 8.84], map_size=114298
+[slam_wrapper_py-1] [INFO] [1775608906.980727930] [drone0.slam_wrapper]: Frame #991: 5650 pts, pose=[-10.36, 2.70, 8.83], map_size=114648
+[slam_wrapper_py-1] [INFO] [1775608908.801986182] [drone0.slam_wrapper]: Frame #1001: 6021 pts, pose=[-10.16, 2.06, 8.39], map_size=116277
+[slam_wrapper_py-1] [INFO] [1775608911.184880131] [drone0.slam_wrapper]: Frame #1011: 6961 pts, pose=[-3.45, 2.19, 7.28], map_size=122168
+[slam_wrapper_py-1] [INFO] [1775608912.899964316] [drone0.slam_wrapper]: Frame #1021: 7871 pts, pose=[-4.57, 2.25, 6.20], map_size=127349
+[slam_wrapper_py-1] [INFO] [1775608914.688917355] [drone0.slam_wrapper]: Frame #1031: 9322 pts, pose=[-5.70, 2.14, 5.55], map_size=130743
+[slam_wrapper_py-1] [INFO] [1775608916.414900932] [drone0.slam_wrapper]: Frame #1041: 13791 pts, pose=[-7.03, 2.15, 4.78], map_size=133910
+[slam_wrapper_py-1] [INFO] [1775608917.871726780] [drone0.slam_wrapper]: Frame #1051: 14522 pts, pose=[-7.34, 2.14, 4.04], map_size=136234
+[slam_wrapper_py-1] [INFO] [1775608918.947157716] [drone0.slam_wrapper]: Frame #1061: 15399 pts, pose=[-7.33, 2.18, 3.47], map_size=137221
+[slam_wrapper_py-1] [INFO] [1775608920.168601560] [drone0.slam_wrapper]: Frame #1071: 17296 pts, pose=[-7.32, 2.17, 2.80], map_size=137823
+[slam_wrapper_py-1] [INFO] [1775608921.360704220] [drone0.slam_wrapper]: Frame #1081: 19589 pts, pose=[-7.32, 2.18, 2.20], map_size=138254
+[slam_wrapper_py-1] [INFO] [1775608922.806225116] [drone0.slam_wrapper]: Frame #1091: 21657 pts, pose=[-7.33, 2.19, 1.67], map_size=138563
+[slam_wrapper_py-1] [INFO] [1775608924.194790523] [drone0.slam_wrapper]: Frame #1101: 24161 pts, pose=[-7.37, 2.22, 0.93], map_size=138794
+[slam_wrapper_py-1] [INFO] [1775608925.309702023] [drone0.slam_wrapper]: Frame #1111: 25733 pts, pose=[-7.36, 2.20, 0.35], map_size=138890
+[slam_wrapper_py-1] [INFO] [1775608926.628485507] [drone0.slam_wrapper]: Frame #1121: 26786 pts, pose=[-7.36, 2.24, -0.25], map_size=139017
+[slam_wrapper_py-1] [INFO] [1775608928.076731554] [drone0.slam_wrapper]: Frame #1131: 26816 pts, pose=[-7.36, 2.21, -0.32], map_size=139039
+[slam_wrapper_py-1] [INFO] [1775608929.134634831] [drone0.slam_wrapper]: Frame #1141: 26823 pts, pose=[-7.35, 2.21, -0.34], map_size=139050
+[slam_wrapper_py-1] [INFO] [1775608930.204127408] [drone0.slam_wrapper]: Frame #1151: 26829 pts, pose=[-7.36, 2.21, -0.34], map_size=139052
+[slam_wrapper_py-1] [INFO] [1775608931.240293911] [drone0.slam_wrapper]: Frame #1161: 26673 pts, pose=[-7.36, 2.20, -0.31], map_size=139062
+[slam_wrapper_py-1] [INFO] [1775608932.608764947] [drone0.slam_wrapper]: Frame #1171: 25225 pts, pose=[-7.38, 2.21, 0.49], map_size=139119
+[slam_wrapper_py-1] [INFO] [1775608934.175135534] [drone0.slam_wrapper]: Frame #1181: 24629 pts, pose=[-7.33, 2.23, 0.80], map_size=139155
+[slam_wrapper_py-1] [INFO] [1775608935.302790610] [drone0.slam_wrapper]: Frame #1191: 24867 pts, pose=[-7.34, 2.21, 0.69], map_size=139173
+[slam_wrapper_py-1] [INFO] [1775608936.768009861] [drone0.slam_wrapper]: Frame #1201: 24894 pts, pose=[-7.34, 2.21, 0.68], map_size=139180
+[slam_wrapper_py-1] [INFO] [1775608938.335615715] [drone0.slam_wrapper]: Frame #1211: 24857 pts, pose=[-7.34, 2.22, 0.69], map_size=139192
+[slam_wrapper_py-1] [INFO] [1775608939.757399584] [drone0.slam_wrapper]: Frame #1221: 24821 pts, pose=[-7.36, 2.21, 0.69], map_size=139196
+[slam_wrapper_py-1] [INFO] [1775608940.850784683] [drone0.slam_wrapper]: Frame #1231: 24888 pts, pose=[-7.34, 2.22, 0.70], map_size=139199
+[slam_wrapper_py-1] [INFO] [1775608941.919193474] [drone0.slam_wrapper]: Frame #1241: 24862 pts, pose=[-7.34, 2.22, 0.69], map_size=139206
+[slam_wrapper_py-1] [INFO] [1775608943.620919542] [drone0.slam_wrapper]: Frame #1251: 24859 pts, pose=[-7.34, 2.22, 0.69], map_size=139208
+[slam_wrapper_py-1] [INFO] [1775608944.857835653] [drone0.slam_wrapper]: Frame #1261: 24806 pts, pose=[-7.33, 2.16, 0.69], map_size=139272
+[slam_wrapper_py-1] [INFO] [1775608946.364937367] [drone0.slam_wrapper]: Frame #1271: 24888 pts, pose=[-7.37, 1.91, 0.64], map_size=139624
+[slam_wrapper_py-1] [INFO] [1775608947.967936548] [drone0.slam_wrapper]: Frame #1281: 23792 pts, pose=[-7.33, 0.59, 0.58], map_size=140338
+[slam_wrapper_py-1] [INFO] [1775608949.363372468] [drone0.slam_wrapper]: Frame #1291: 23927 pts, pose=[-7.15, 0.47, 0.57], map_size=140768
+[slam_wrapper_py-1] [INFO] [1775608950.877766982] [drone0.slam_wrapper]: Frame #1301: 24532 pts, pose=[-6.30, 0.41, 0.45], map_size=141169
+[slam_wrapper_py-1] [INFO] [1775608952.557355073] [drone0.slam_wrapper]: Frame #1311: 23875 pts, pose=[-6.24, -0.52, 0.37], map_size=141639
+[slam_wrapper_py-1] [INFO] [1775608954.183454021] [drone0.slam_wrapper]: Frame #1321: 24324 pts, pose=[-6.24, -0.68, 0.36], map_size=141772
+[slam_wrapper_py-1] [INFO] [1775608955.753204373] [drone0.slam_wrapper]: Frame #1331: 24243 pts, pose=[-6.11, -0.66, 0.32], map_size=141891
+[slam_wrapper_py-1] [INFO] [1775608957.377538389] [drone0.slam_wrapper]: Frame #1341: 23553 pts, pose=[-5.23, -0.67, 0.30], map_size=142032
+[slam_wrapper_py-1] [INFO] [1775608958.641218286] [drone0.slam_wrapper]: Frame #1351: 24287 pts, pose=[-5.17, -0.85, 0.26], map_size=142223
+[slam_wrapper_py-1] [INFO] [1775608960.193400835] [drone0.slam_wrapper]: Frame #1361: 24027 pts, pose=[-5.12, -1.76, 0.22], map_size=142387
+[slam_wrapper_py-1] [INFO] [1775608961.661004189] [drone0.slam_wrapper]: Frame #1371: 24482 pts, pose=[-5.63, -1.75, 0.16], map_size=142486
+[slam_wrapper_py-1] [INFO] [1775608963.045831768] [drone0.slam_wrapper]: Frame #1381: 24991 pts, pose=[-6.22, -1.73, 0.15], map_size=142543
+[slam_wrapper_py-1] [INFO] [1775608964.521446868] [drone0.slam_wrapper]: Frame #1391: 24633 pts, pose=[-6.08, -1.74, 0.17], map_size=142573
+[slam_wrapper_py-1] [INFO] [1775608965.855620757] [drone0.slam_wrapper]: Frame #1401: 24753 pts, pose=[-6.10, -1.73, 0.18], map_size=142595
+[slam_wrapper_py-1] [INFO] [1775608967.083580058] [drone0.slam_wrapper]: Frame #1411: 24651 pts, pose=[-5.95, -1.71, 0.15], map_size=142628
+[slam_wrapper_py-1] [INFO] [1775608968.556599759] [drone0.slam_wrapper]: Frame #1421: 24154 pts, pose=[-5.20, -1.72, 0.10], map_size=142677
+[slam_wrapper_py-1] [INFO] [1775608970.218785541] [drone0.slam_wrapper]: Frame #1431: 24521 pts, pose=[-5.00, -1.46, 0.05], map_size=142795
+[slam_wrapper_py-1] [INFO] [1775608971.906117451] [drone0.slam_wrapper]: Frame #1441: 24935 pts, pose=[-4.96, -0.62, 0.03], map_size=142881
+[slam_wrapper_py-1] [INFO] [1775608973.518857729] [drone0.slam_wrapper]: Frame #1451: 24199 pts, pose=[-3.98, -0.76, -0.02], map_size=142954
+[slam_wrapper_py-1] [INFO] [1775608975.258922985] [drone0.slam_wrapper]: Frame #1461: 24951 pts, pose=[-4.01, -1.65, -0.10], map_size=143083
+[slam_wrapper_py-1] [INFO] [1775608976.894140104] [drone0.slam_wrapper]: Frame #1471: 24865 pts, pose=[-4.02, -1.74, -0.07], map_size=143162
+[slam_wrapper_py-1] [INFO] [1775608978.545074593] [drone0.slam_wrapper]: Frame #1481: 24887 pts, pose=[-4.03, -1.74, -0.10], map_size=143181
+[slam_wrapper_py-1] [INFO] [1775608979.895996696] [drone0.slam_wrapper]: Frame #1491: 24930 pts, pose=[-4.03, -1.76, -0.06], map_size=143188
+[slam_wrapper_py-1] [INFO] [1775608981.101443428] [drone0.slam_wrapper]: Frame #1501: 24330 pts, pose=[-4.13, -1.74, -0.10], map_size=143224
+[slam_wrapper_py-1] [INFO] [1775608982.406685220] [drone0.slam_wrapper]: Frame #1511: 25307 pts, pose=[-5.05, -1.78, -0.14], map_size=143258
+[slam_wrapper_py-1] [INFO] [1775608983.724493919] [drone0.slam_wrapper]: Frame #1521: 25166 pts, pose=[-4.84, -1.75, -0.18], map_size=143271
+[slam_wrapper_py-1] [INFO] [1775608985.307213770] [drone0.slam_wrapper]: Frame #1531: 24420 pts, pose=[-4.20, -1.36, -0.26], map_size=143322
+[slam_wrapper_py-1] [INFO] [1775608986.694925977] [drone0.slam_wrapper]: Frame #1541: 25727 pts, pose=[-4.86, -0.64, -0.25], map_size=143367
+[slam_wrapper_py-1] [INFO] [1775608987.864009555] [drone0.slam_wrapper]: Frame #1551: 25508 pts, pose=[-4.88, -0.76, -0.24], map_size=143385
+[slam_wrapper_py-1] [INFO] [1775608989.302134629] [drone0.slam_wrapper]: Frame #1561: 25799 pts, pose=[-4.78, -0.75, -0.39], map_size=143407
+[slam_wrapper_py-1] [INFO] [1775608990.902981770] [drone0.slam_wrapper]: Frame #1571: 25799 pts, pose=[-4.79, -0.78, -0.35], map_size=143411
+[slam_wrapper_py-1] [INFO] [1775608992.502886440] [drone0.slam_wrapper]: Frame #1581: 25783 pts, pose=[-4.77, -0.76, -0.33], map_size=143413
+[slam_wrapper_py-1] [INFO] [1775608994.111636673] [drone0.slam_wrapper]: Frame #1591: 25783 pts, pose=[-4.79, -0.79, -0.34], map_size=143417
+[slam_wrapper_py-1] [INFO] [1775608995.682145685] [drone0.slam_wrapper]: Frame #1601: 25783 pts, pose=[-4.79, -0.78, -0.35], map_size=143417
+[slam_wrapper_py-1] [INFO] [1775608997.288255921] [drone0.slam_wrapper]: Frame #1611: 25783 pts, pose=[-4.79, -0.78, -0.34], map_size=143419
+[slam_wrapper_py-1] [INFO] [1775608998.885905343] [drone0.slam_wrapper]: Frame #1621: 25783 pts, pose=[-4.79, -0.78, -0.34], map_size=143420
+[slam_wrapper_py-1] [INFO] [1775609000.503945627] [drone0.slam_wrapper]: Frame #1631: 25783 pts, pose=[-4.79, -0.77, -0.34], map_size=143421
+[slam_wrapper_py-1] [INFO] [1775609002.108456048] [drone0.slam_wrapper]: Frame #1641: 25783 pts, pose=[-4.79, -0.78, -0.34], map_size=143421
+[slam_wrapper_py-1] [INFO] [1775609003.747933965] [drone0.slam_wrapper]: Frame #1651: 25783 pts, pose=[-4.78, -0.78, -0.34], map_size=143421
+[slam_wrapper_py-1] [INFO] [1775609005.358220117] [drone0.slam_wrapper]: Frame #1661: 25783 pts, pose=[-4.79, -0.78, -0.35], map_size=143422
+[slam_wrapper_py-1] [INFO] [1775609006.949206589] [drone0.slam_wrapper]: Frame #1671: 25783 pts, pose=[-4.79, -0.77, -0.34], map_size=143422
+[slam_wrapper_py-1] [INFO] [1775609008.532764460] [drone0.slam_wrapper]: Frame #1681: 25783 pts, pose=[-4.79, -0.78, -0.34], map_size=143422
+[slam_wrapper_py-1] [INFO] [1775609009.972424941] [drone0.slam_wrapper]: Frame #1691: 25783 pts, pose=[-4.79, -0.78, -0.34], map_size=143422
+[slam_wrapper_py-1] [INFO] [1775609011.562013253] [drone0.slam_wrapper]: Frame #1701: 25783 pts, pose=[-4.79, -0.78, -0.34], map_size=143422
+[slam_wrapper_py-1] [INFO] [1775609013.152663029] [drone0.slam_wrapper]: Frame #1711: 25783 pts, pose=[-4.79, -0.77, -0.34], map_size=143422
+[slam_wrapper_py-1] [INFO] [1775609014.631599154] [drone0.slam_wrapper]: Frame #1721: 25783 pts, pose=[-4.79, -0.78, -0.34], map_size=143423
+[slam_wrapper_py-1] [INFO] [1775609016.130512697] [drone0.slam_wrapper]: Frame #1731: 25783 pts, pose=[-4.79, -0.77, -0.35], map_size=143423
+[slam_wrapper_py-1] [INFO] [1775609017.295728443] [drone0.slam_wrapper]: Frame #1741: 25783 pts, pose=[-4.79, -0.78, -0.34], map_size=143423
+[slam_wrapper_py-1] [INFO] [1775609018.384240367] [drone0.slam_wrapper]: Frame #1751: 25783 pts, pose=[-4.79, -0.78, -0.34], map_size=143423
+[slam_wrapper_py-1] [INFO] [1775609019.962976766] [drone0.slam_wrapper]: Frame #1761: 25783 pts, pose=[-4.79, -0.77, -0.34], map_size=143423
+[slam_wrapper_py-1] [INFO] [1775609021.400230013] [drone0.slam_wrapper]: Frame #1771: 25783 pts, pose=[-4.79, -0.78, -0.35], map_size=143423
+[slam_wrapper_py-1] [INFO] [1775609022.892111678] [drone0.slam_wrapper]: Frame #1781: 25783 pts, pose=[-4.79, -0.79, -0.34], map_size=143424
+[slam_wrapper_py-1] Traceback (most recent call last):
+[slam_wrapper_py-1]   File "/home/halil/aerostack2/install/as2_slam_wrapper/lib/as2_slam_wrapper/slam_wrapper_py", line 4, in <module>
+[slam_wrapper_py-1]     main()
+[slam_wrapper_py-1]   File "/home/halil/aerostack2/install/as2_slam_wrapper/local/lib/python3.10/dist-packages/as2_slam_wrapper/slam_wrapper_node.py", line 226, in main
+[slam_wrapper_py-1]     rclpy.spin(node)
+[slam_wrapper_py-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+[slam_wrapper_py-1]     executor.spin_once()
+[slam_wrapper_py-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+[slam_wrapper_py-1]     self._spin_once_impl(timeout_sec)
+[slam_wrapper_py-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 805, in _spin_once_impl
+[slam_wrapper_py-1]     raise handler.exception()
+[slam_wrapper_py-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 272, in _execute_coroutine_step
+[slam_wrapper_py-1]     result = coro.send(None)
+[slam_wrapper_py-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 488, in handler
+[slam_wrapper_py-1]     await call_coroutine(entity, arg)
+[slam_wrapper_py-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 407, in _execute_subscription
+[slam_wrapper_py-1]     await await_or_execute(sub.callback, msg)
+[slam_wrapper_py-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 110, in await_or_execute
+[slam_wrapper_py-1]     return callback(*args)
+[slam_wrapper_py-1]   File "/home/halil/aerostack2/install/as2_slam_wrapper/local/lib/python3.10/dist-packages/as2_slam_wrapper/slam_wrapper_node.py", line 212, in point_cloud_callback
+[slam_wrapper_py-1]     self.map_cloud_pub.publish(map_cloud_msg)
+[slam_wrapper_py-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/publisher.py", line 70, in publish
+[slam_wrapper_py-1]     self.__publisher.publish(msg)
+[slam_wrapper_py-1] rclpy._rclpy_pybind11.RCLError: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389

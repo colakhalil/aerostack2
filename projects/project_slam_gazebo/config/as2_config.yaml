@@ -1,0 +1,35 @@
+/**:
+  # Global + nested per-node blocks for platform / state_estimator / controller_manager.
+  # Behavior parameters live in behaviors_config.yaml (separate file) because
+  # AS2's write_file_from_dict splits ros__parameters into a duplicate /**: block,
+  # which trips up the param loader when combined with named sub-blocks.
+  ros__parameters:
+    use_sim_time: true
+    tf_timeout_threshold: 0.1
+
+  # Aerial platform
+  platform:
+    ros__parameters:
+      cmd_freq: 50.0
+      info_freq: 10.0
+
+  # State estimator (ground_truth from Gazebo)
+  state_estimator:
+    ros__parameters:
+      plugin_name: "ground_truth"
+      use_gazebo_tf: true
+      base_frame: "base_link"
+      global_ref_frame: "earth"
+      odom_frame: "odom"
+      map_frame: "map"
+
+  # Motion controller (PID speed)
+  controller_manager:
+    ros__parameters:
+      plugin_name: "pid_speed_controller"
+      cmd_freq: 50.0
+      info_freq: 10.0
+      odom_frame_id: "odom"
+      base_frame_id: "base_link"
+      use_bypass: true
+      tf_timeout_threshold: 0.1

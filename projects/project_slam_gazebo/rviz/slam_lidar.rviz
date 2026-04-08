@@ -24,25 +24,50 @@ Visualization Manager:
       Marker Scale: 0.5
       Frame Timeout: 15
     - Class: rviz_default_plugins/PointCloud2
-      Name: LiDAR PointCloud
+      Name: LiDAR Raw
       Value: true
       Topic:
         Value: /drone0/sensor_measurements/lidar_0/points
         Depth: 5
         Durability Policy: Volatile
         Reliability Policy: Best Effort
+      Size (Pixels): 2
+      Style: Points
+      Color Transformer: FlatColor
+      Color: 255; 100; 100
+      Use Fixed Frame: true
+      Decay Time: 0
+    - Class: rviz_default_plugins/PointCloud2
+      Name: SLAM Map Cloud
+      Value: true
+      Topic:
+        Value: /drone0/slam/map_cloud
+        Depth: 1
+        Durability Policy: Volatile
+        Reliability Policy: Reliable
       Size (Pixels): 3
       Style: Points
       Color Transformer: AxisColor
       Axis: Z
       Use Fixed Frame: true
-      Selectable: true
       Decay Time: 0
-      Min Color: 0; 0; 200
-      Max Color: 200; 0; 0
+    - Class: rviz_default_plugins/Odometry
+      Name: SLAM Odometry
+      Value: true
+      Topic:
+        Value: /drone0/slam/odom
+        Depth: 5
+        Durability Policy: Volatile
+        Reliability Policy: Reliable
+      Position Tolerance: 0.1
+      Angle Tolerance: 0.1
+      Keep: 100
+      Shape:
+        Value: Arrow
+        Arrow Length: 0.3
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: drone0/base_link
+    Fixed Frame: drone0/map
     Frame Rate: 30
   Tools:
     - Class: rviz_default_plugins/MoveCamera
@@ -51,12 +76,12 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 15
+      Distance: 25
       Focal Point:
         X: 0
         Y: 0
         Z: 0
-      Pitch: 0.5
+      Pitch: 0.7
       Yaw: 0.8
       Name: Current View
 Window Geometry:

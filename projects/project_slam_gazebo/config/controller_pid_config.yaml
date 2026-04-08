@@ -1,0 +1,63 @@
+/**:
+  ros__parameters:
+    use_sim_time: true
+
+    # Controller manager core
+    plugin_name: "pid_speed_controller"
+    cmd_freq: 50.0
+    info_freq: 10.0
+    odom_frame_id: "odom"
+    base_frame_id: "base_link"
+    tf_timeout_threshold: 0.1
+
+    # Plugin behaviour: keep speed commands in bypass (direct passthrough),
+    # but POSITION/HOVER/TRAJECTORY modes still need real PID gains.
+    use_bypass: true
+    proportional_limitation: true
+
+    # Position control (POSITION mode → outputs velocity to platform)
+    position_control:
+      reset_integral: false
+      antiwindup_cte: 1.0
+      alpha: 0.1
+      kp: { x: 1.5, y: 1.5, z: 1.5 }
+      kd: { x: 0.1, y: 0.1, z: 0.1 }
+      ki: { x: 0.01, y: 0.01, z: 0.01 }
+
+    # Speed control (only used when use_bypass=false; kept sane just in case)
+    speed_control:
+      reset_integral: false
+      antiwindup_cte: 1.0
+      alpha: 0.1
+      kp: { x: 3.0, y: 3.0, z: 3.0 }
+      kd: { x: 0.0, y: 0.0, z: 0.0 }
+      ki: { x: 0.0, y: 0.0, z: 0.0 }
+
+    # Trajectory control (used by GoTo / FollowPath behaviors with trajectory plugin)
+    trajectory_control:
+      reset_integral: false
+      antiwindup_cte: 1.0
+      alpha: 0.1
+      kp: { x: 1.5, y: 1.5, z: 1.5 }
+      kd: { x: 0.1, y: 0.1, z: 0.1 }
+      ki: { x: 0.01, y: 0.01, z: 0.01 }
+
+    # Yaw control (POSITION YAW_ANGLE mode)
+    yaw_control:
+      reset_integral: false
+      antiwindup_cte: 1.0
+      alpha: 0.1
+      kp: 1.5
+      kd: 0.1
+      ki: 0.01
+
+    # Speed-in-a-plane (z position + xy speed) — kept default-ish
+    speed_in_a_plane_control:
+      reset_integral: false
+      antiwindup_cte: 1.0
+      alpha: 0.1
+      height: { kp: 1.5, kd: 0.1, ki: 0.01 }
+      speed:
+        kp: { x: 3.0, y: 3.0 }
+        kd: { x: 0.0, y: 0.0 }
+        ki: { x: 0.0, y: 0.0 }
