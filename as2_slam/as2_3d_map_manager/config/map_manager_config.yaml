@@ -1,0 +1,15 @@
+/**:
+  ros__parameters:
+    use_sim_time: true
+    # SLAM noktabulutu topic'i
+    input_topic: "slam/map_cloud"
+    # Voxel grid boyutu (metre) — küçük = detaylı ama yavaş
+    voxel_size: 0.1
+    # Maksimum nokta sayısı (0 = sınırsız)
+    max_points: 0
+    # Harita kaydetme dizini
+    output_dir: "~/aerostack2_maps"
+    # Global frame (harita bu frame'de biriktirilir)
+    global_frame: "drone0/map"
+    # Birikmiş haritayı publish etme aralığı (saniye)
+    publish_interval: 5.0

@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+"""Entry point for map_manager_node."""
+from as2_3d_map_manager.map_manager_node import main
+main()

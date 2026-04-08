@@ -1,6 +1,0 @@
-[INFO] [launch]: All log files can be found below /home/halil/.ros/log/2026-04-08-03-39-22-135313-halil-ibrahim-52916
-[INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [as2_state_estimator_node-1]: process started with pid [52918]
-[as2_state_estimator_node-1] [0m[INFO] [1775608762.314088232] [drone0.state_estimator]: Construct with name [state_estimator][0m
-[as2_state_estimator_node-1] [0m[INFO] [1775608762.344687613] [drone0.state_estimator]: Using gazebo tfs[0m
-[as2_state_estimator_node-1] [33m[WARN] [1775608762.347257230] [drone0.state_estimator]: Received twist in frame drone0/base_link, expected drone0. Changed to expected one[0m
