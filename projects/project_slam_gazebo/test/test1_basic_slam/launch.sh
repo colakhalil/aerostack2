@@ -39,7 +39,7 @@ open_window 7 "RViz" \
   "$SOURCE_CMD && sleep 12 && rviz2 -d $RVIZ_FILE"
 
 open_window 8 "MapManager" \
-  "$SOURCE_CMD && sleep 11 && ros2 launch as2_3d_map_manager map_manager_launch.py namespace:=$NAMESPACE use_sim_time:=true config_file:=$MAP_MANAGER_CONFIG"
+  "$SOURCE_CMD && sleep 11 && ros2 launch as2_3d_map_manager map_manager_launch.py namespace:=$NAMESPACE use_sim_time:=true config_file:=$MAP_MANAGER_CONFIG output_dir:=$MAPS_DIR"
 
 open_window 9 "Teleop" \
   "$SOURCE_CMD && sleep 14 && python3 -m as2_keyboard_teleoperation.keyboard_teleoperation \

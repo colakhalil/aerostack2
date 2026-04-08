@@ -9,6 +9,7 @@ ament_python_install_package(${PROJECT_NAME})
 
 install(PROGRAMS
   scripts/map_manager_py
+  scripts/map_merger_py
   DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -20,6 +20,10 @@ SOURCE_CMD="source /opt/ros/humble/setup.bash && source $WORKSPACE_DIR/install/s
 LOG_DIR="$SCRIPT_DIR/logs"
 mkdir -p "$LOG_DIR"
 
+# Map kayıt dizini — her testin kendi maps/ dizini
+MAPS_DIR="$SCRIPT_DIR/maps"
+mkdir -p "$MAPS_DIR"
+
 # Yeni gnome-terminal penceresi açan helper
 # $1: pencere numarası, $2: başlık, $3: shell komutu
 open_window() {

@@ -68,14 +68,18 @@ class MapManagerNode(Node):
         self.declare_parameter('voxel_size', 0.1)
         self.declare_parameter('max_points', 0)
         self.declare_parameter('output_dir', '~/aerostack2_maps')
-        self.declare_parameter('global_frame', 'earth')
+        self.declare_parameter('global_frame', 'map')
         self.declare_parameter('publish_interval', 5.0)
 
         input_topic = self.get_parameter('input_topic').value
         self.voxel_size = self.get_parameter('voxel_size').value
         self.max_points = self.get_parameter('max_points').value
-        self.global_frame = self.get_parameter('global_frame').value
         publish_interval = self.get_parameter('publish_interval').value
+
+        # Build global_frame with namespace prefix (e.g. "map" → "drone0/map")
+        ns = self.get_namespace().strip('/')
+        frame_param = self.get_parameter('global_frame').value
+        self.global_frame = f'{ns}/{frame_param}' if ns else frame_param
 
         self.get_logger().info(f'input_topic: {input_topic}')
         self.get_logger().info(f'voxel_size: {self.voxel_size} m')
@@ -111,7 +115,8 @@ class MapManagerNode(Node):
 
         self.get_logger().info(f'output_dir: {self.output_dir}')
         self.get_logger().info('Map Manager Node started — waiting for point clouds...')
-        self.get_logger().info('  Save map: ros2 service call /drone0/map_manager/save_map std_srvs/srv/Trigger')
+        save_topic = f'/{ns}/map_manager/save_map' if ns else '/map_manager/save_map'
+        self.get_logger().info(f'  Save map: ros2 service call {save_topic} std_srvs/srv/Trigger')
 
     def _cloud_callback(self, msg: PointCloud2):
         points = pointcloud2_to_numpy(msg)

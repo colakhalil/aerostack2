@@ -27,6 +27,10 @@ def generate_launch_description():
             default_value='true',
             choices=['true', 'false'],
             description='Use simulation time.'),
+        DeclareLaunchArgument(
+            'output_dir',
+            default_value='~/aerostack2_maps',
+            description='Directory to save map files.'),
 
         Node(
             package='as2_3d_map_manager',
@@ -35,7 +39,8 @@ def generate_launch_description():
             output='screen',
             parameters=[
                 LaunchConfiguration('config_file'),
-                {'use_sim_time': LaunchConfiguration('use_sim_time')},
+                {'use_sim_time': LaunchConfiguration('use_sim_time'),
+                 'output_dir': LaunchConfiguration('output_dir')},
             ],
         ),
     ])

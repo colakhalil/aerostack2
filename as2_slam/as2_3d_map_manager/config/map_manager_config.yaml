@@ -7,9 +7,9 @@
     voxel_size: 0.1
     # Maksimum nokta sayısı (0 = sınırsız)
     max_points: 0
-    # Harita kaydetme dizini
+    # Harita kaydetme dizini (test scriptleri bunu override edebilir)
     output_dir: "~/aerostack2_maps"
     # Global frame (harita bu frame'de biriktirilir)
-    global_frame: "drone0/map"
+    global_frame: "map"
     # Birikmiş haritayı publish etme aralığı (saniye)
     publish_interval: 5.0

@@ -11,6 +11,7 @@ setup(
     entry_points={
         'console_scripts': [
             'map_manager_py = as2_3d_map_manager.map_manager_node:main',
+            'map_merger_py = as2_3d_map_manager.map_merger_node:main',
         ],
     },
 )
